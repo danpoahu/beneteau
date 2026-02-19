@@ -2,78 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>2005 Beneteau 373 - For Sale</title>
-  <meta name="description" content="2005 Beneteau 373 for sale. Turn-key cruising sailboat. Photos, specs, and contact info." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>2005 Beneteau 373 – For Sale</title>
+  <meta name="description" content="2005 Beneteau 373 for sale in Kaneohe. Asking $89,950. Call/Text to schedule a showing." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__overlay"></div>
-    <div class="container hero__content">
+  <header class="hero" style="background-image:url('assets/main.jpg')">
+    <div class="hero__scrim"></div>
+    <div class="hero__content">
       <div class="hero__top">
         <div>
-          <h1 id="title">2005 Beneteau 373</h1>
-          <p id="subtitle" class="subtitle">Turn-key cruising sailboat • Comfortable • Ready to show</p>
+          <h1>2005 Beneteau 373</h1>
+          <p class="subtitle">Turn-key cruising sailboat • Comfortable • Ready to show</p>
         </div>
-        <div class="price" id="priceBadge">Asking $89,950</div>
+        <div class="priceBadge">ASKING&nbsp;&nbsp;$89,950</div>
       </div>
 
-      <div class="hero__cta">
-        <a class="btn" id="callBtn" href="#">Call/Text</a>
-</div>
-      <p class="small" id="locationNote">Located at Kaneohe Bay Yacht Club (members only) — appointment required.</p>
+      <div class="hero__actions">
+        <a class="btn" href="#showing">Schedule a showing</a>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section class="card grid2">
-      <div>
-        <h2>Highlights</h2>
-        <ul id="highlights"></ul>
-      </div>
-      <div>
-        <h2>Included</h2>
-        <ul id="included"></ul>
-      </div>
-    </section>
-
-    <section class="gallery">
-      <h2>Photos</h2>
-      <div class="gallery__grid" id="gallery"></div>
-    </section>
-
+  <main class="wrap">
     <section class="card">
-      <h2>Contact</h2>
-      <div class="contact">
+      <div class="card__grid">
         <div>
-  <div class="contact__name">Contact</div>
-
-  <div class="contactCard">
-    <div class="contactCard__name" id="contactName1">Dave DelRosario</div>
-    <div class="contact__line"><span class="label">Call/Text:</span> <a id="phoneLink1" href="#">808-479-3157</a></div>
-  </div>
-
-  <div class="contactCard" style="margin-top:10px;">
-    <div class="contactCard__name" id="contactName2">Dave Ayling</div>
-    <div class="contact__line"><span class="label">Call/Text:</span> <a id="phoneLink2" href="#">808-375-8150</a></div>
-  </div>
-
-  <div class="contact__line" id="accessLine">Members-only access. Please set an appointment for entry.</div>
-</div>
-        <div class="contact__box">
-          <div class="contact__badge">Share this listing</div>
-          <div class="small">Tip: print a QR code that points to this page and tape it on the flyer.</div>
+          <h2>Why you’ll love this boat</h2>
+          <ul class="bullets">
+            <li>Proven Beneteau 373 cruising design</li>
+            <li>Spacious cockpit with bimini &amp; shade</li>
+            <li>Stable, comfortable ride under sail</li>
+            <li>Great for weekends, island hops, or liveaboard life</li>
+            <li>3-blade feathering MAX prop</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Included</h2>
+          <ul class="bullets">
+            <li>Avon Redcrest dinghy</li>
+            <li>New wind generator</li>
+            <li>2 × 50w solar panels</li>
+            <li>Comfortable, bright interior</li>
+            <li>Functional galley with great storage</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <footer class="footer small">
-      <div>© <span id="year"></span> • Listing maintained by owner/agent • For inquiries, call/text.</div>
-      <div class="footer__admin"><a href="admin.html">Admin</a></div>
-    </footer>
+    <section class="card">
+      <div class="sectionHead">
+        <h2>Photos</h2>
+        <p class="muted">Auto-rotating carousel — tap/click any photo to expand.</p>
+      </div>
+
+      <div class="carousel" aria-label="Photo carousel">
+        <button class="nav prev" aria-label="Previous photo">‹</button>
+
+        <div class="viewport">
+          <div class="track" id="track">
+            <figure class="slide">
+              <img src="assets/main.jpg" alt="Beneteau 373 under sail" loading="eager" data-full="assets/main.jpg"/>
+              <figcaption>Under sail</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/haul.jpg" alt="Haul-out / hull view" loading="lazy" data-full="assets/haul.jpg"/>
+              <figcaption>Hull / haul-out view</figcaption>
+            </figure>
+            <figure class="slide">
+              <img src="assets/interior.jpg" alt="Interior salon and galley" loading="lazy" data-full="assets/interior.jpg"/>
+              <figcaption>Interior — salon &amp; galley</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <button class="nav next" aria-label="Next photo">›</button>
+      </div>
+
+      <div class="dots" id="dots" aria-label="Carousel navigation"></div>
+    </section>
+
+    <section class="card" id="showing">
+      <h2>Schedule a showing</h2>
+
+      <div class="contacts">
+        <div class="contactCard">
+          <div class="contactName">Dave DelRosario</div>
+          <div class="contactLine"><span>Call/Text:</span> <a href="tel:8084793157">808-479-3157</a></div>
+        </div>
+
+        <div class="contactCard">
+          <div class="contactName">Dave Ayling</div>
+          <div class="contactLine"><span>Call/Text:</span> <a href="tel:8083758150">808-375-8150</a></div>
+        </div>
+      </div>
+
+      <p class="muted note">
+        Located at Kaneohe Bay Yacht Club (members only). Appointment required for access.
+      </p>
+    </section>
   </main>
 
-  <script type="module" src="app.js"></script>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox__backdrop" id="lbBackdrop"></div>
+    <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+    <img class="lightbox__img" id="lbImg" alt="" />
+    <div class="lightbox__caption" id="lbCaption"></div>
+  </div>
+
+  <script src="site.js"></script>
 </body>
 </html>
